@@ -19,5 +19,4 @@ Notre application pourra effectuer plusieurs tâches :
   - Sensibiliser les personnes sur les déchets spatiaux
   
 Cette liste est non-exhaustive. Afin de faciliter la compréhension de notre public, nous allons
-adopter un style cartoon / dessin. Nous avons déjà des visuels (logo et splash screen). Nous
-vous les enverrons par mail.
+adopter un style cartoon / dessin. Nous avons déjà des visuels (logo et splash screen).
