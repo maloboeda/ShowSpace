@@ -20,3 +20,5 @@ Notre application pourra effectuer plusieurs tâches :
   
 Cette liste est non-exhaustive. Afin de faciliter la compréhension de notre public, nous allons
 adopter un style cartoon / dessin. Nous avons déjà des visuels (logo et splash screen).
+
+BOËDA Malo & SOMMER Clément
