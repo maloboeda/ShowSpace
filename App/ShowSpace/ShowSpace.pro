@@ -18,9 +18,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    source/Astre.cpp \
+    source/Etoile.cpp \
+    source/Objet_Artificiel.cpp \
+    source/Planete.cpp \
+    source/Satellite.cpp \
+    source/Satellite_Artificiel.cpp \
     test.cpp
 
 HEADERS += \
+    header/Astre.h \
+    header/Etoile.h \
+    header/Objet_Artificiel.h \
+    header/Planete.h \
+    header/Satellite.h \
+    header/Satellite_Artificiel.h \
     mainwindow.h \
     test.h
 
