@@ -44,10 +44,10 @@ void Astre::setRayon(int aRayon) {
 }
 
 string Astre::getNom() {
-	throw "Not yet implemented";
+    return this->_nom_astre;
 }
 
 void Astre::setNom(string aNom) {
-	throw "Not yet implemented";
+    this->_nom_astre = aNom;
 }
 

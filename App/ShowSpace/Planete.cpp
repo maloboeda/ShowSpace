@@ -8,12 +8,12 @@ using namespace std;
 #include "Etoile.h"
 #include "Astre.h"
 
-int Planete::getRévolution() {
-	return this->_révolution;
+int Planete::getRevolution() {
+    return this->_revolution;
 }
 
-void Planete::setRévolution(int aRévolution) {
-	this->_révolution = aRévolution;
+void Planete::setRevolution(int aRevolution) {
+    this->_revolution = aRevolution;
 }
 
 bool Planete::getAtmopshere() {

@@ -5,32 +5,32 @@ using namespace std;
 #ifndef __Planete_h__
 #define __Planete_h__
 
-#include "Satellite.h"
+//#include "Satellite.h"
 #include "Objet_Artificiel.h"
 #include "Etoile.h"
 #include "Astre.h"
 
-// class Satellite;
+class Satellite;
 class Objet_Artificiel;
 class Etoile;
-// class Astre;
+class Astre;
 class Planete;
 
 class Planete: public Astre
 {
-	private: int _révolution;
+    private: int _revolution;
 	private: bool _atmopshere;
 	private: int _pression_atmospherique;
 	private: int _vitesse_orbitale;
 	private: int _taille_orbite;
 	private: int _position_orbitale;
-	private: std::vector<Satellite*> _satellites;
+    private: std::vector<Satellite*> _satellites;
 	private: std::vector<Objet_Artificiel*> _objets;
 	private: std::vector<Etoile*> _etoile;
 
-	public: int getRévolution();
+    public: int getRevolution();
 
-	public: void setRévolution(int aRévolution);
+    public: void setRevolution(int aRevolution);
 
 	public: bool getAtmopshere();
 
@@ -52,11 +52,11 @@ class Planete: public Astre
 
 	public: void setPosition_orbitale(int aPosition_orbitale);
 
-	public: void addSatellites(Satellite* aSatellites);
+    public: void addSatellites(Satellite* aSatellites);
 
-	public: void removeSatellites(Satellite* aSatellites);
+    public: void removeSatellites(Satellite* aSatellites);
 
-	public: Satellite** toSatellitesArray();
+    public: Satellite** toSatellitesArray();
 
 	public: void addObjets(Objet_Artificiel* aObjets);
 

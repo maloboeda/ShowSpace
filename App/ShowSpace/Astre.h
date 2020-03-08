@@ -5,9 +5,7 @@ using namespace std;
 #ifndef __Astre_h__
 #define __Astre_h__
 
-class Astre;
-
-__abstract class Astre
+class Astre
 {
 	private: string _nom_astre;
 	private: int _rayon;

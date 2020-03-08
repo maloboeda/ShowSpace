@@ -1,0 +1,11 @@
+armeabi-v7a/Astre.obj
+armeabi-v7a/Etoile.obj
+armeabi-v7a/Objet_Artificiel.obj
+armeabi-v7a/Planete.obj
+armeabi-v7a/Satellite.obj
+armeabi-v7a/Satellite_Artificiel.obj
+armeabi-v7a/main.obj
+armeabi-v7a/mainwindow.obj
+armeabi-v7a/test.obj
+armeabi-v7a/qrc_resources.obj
+armeabi-v7a/moc_mainwindow.obj

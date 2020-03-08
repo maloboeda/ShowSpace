@@ -1,4 +1,5 @@
 #include <string>
+#include <ctime>
 using namespace std;
 
 #include "Objet_Artificiel.h"
@@ -12,19 +13,19 @@ void Objet_Artificiel::setNom_objet(string aNom_objet) {
 	this->_nom_objet = aNom_objet;
 }
 
-date Objet_Artificiel::getDate_lancement() {
+tm Objet_Artificiel::getDate_lancement() {
 	return this->_date_lancement;
 }
 
-void Objet_Artificiel::setDate_lancement(date aDate_lancement) {
+void Objet_Artificiel::setDate_lancement(tm aDate_lancement) {
 	this->_date_lancement = aDate_lancement;
 }
 
-date Objet_Artificiel::getDate_fin() {
+tm Objet_Artificiel::getDate_fin() {
 	return this->_date_fin;
 }
 
-void Objet_Artificiel::setDate_fin(date aDate_fin) {
+void Objet_Artificiel::setDate_fin(tm aDate_fin) {
 	this->_date_fin = aDate_fin;
 }
 

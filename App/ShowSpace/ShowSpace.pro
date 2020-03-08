@@ -16,23 +16,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Astre.cpp \
+    Etoile.cpp \
+    Objet_Artificiel.cpp \
+    Planete.cpp \
+    Satellite.cpp \
+    Satellite_Artificiel.cpp \
     main.cpp \
     mainwindow.cpp \
-    source/Astre.cpp \
-    source/Etoile.cpp \
-    source/Objet_Artificiel.cpp \
-    source/Planete.cpp \
-    source/Satellite.cpp \
-    source/Satellite_Artificiel.cpp \
     test.cpp
 
 HEADERS += \
-    header/Astre.h \
-    header/Etoile.h \
-    header/Objet_Artificiel.h \
-    header/Planete.h \
-    header/Satellite.h \
-    header/Satellite_Artificiel.h \
+    Astre.h \
+    Etoile.h \
+    Objet_Artificiel.h \
+    Planete.h \
+    Satellite.h \
+    Satellite_Artificiel.h \
     mainwindow.h \
     test.h
 
@@ -46,3 +46,12 @@ TRANSLATIONS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    ../../Images/ShowSpace_fondnoir.png \
+    ../../Images/couverture.png \
+    ../../Images/logo_ShowSpace.png \
+    ../../Images/splashscreen.mp4
+
+RESOURCES += \
+    resources.qrc

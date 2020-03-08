@@ -4,16 +4,16 @@
 
 #include "Planete.h"
 
-// class Planete;
+//class Planete;
 class Satellite;
 
 class Satellite: public Planete
 {
-	private: Planete* _planete;
+    private: Planete* _planete;
 
-	public: void setPlanete(Planete* aPlanete);
+    public: void setPlanete(Planete* aPlanete);
 
-	public: Planete* getPlanete();
+    public: Planete* getPlanete();
 };
 
 #endif

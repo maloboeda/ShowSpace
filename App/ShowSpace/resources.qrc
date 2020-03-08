@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Image/couverture.png</file>
+        <file>Image/logo_ShowSpace.png</file>
+        <file>Image/ShowSpace_fondnoir.png</file>
+        <file>Image/splashscreen.mp4</file>
+        <file>Image/couverture_redi.png</file>
+    </qresource>
+</RCC>
