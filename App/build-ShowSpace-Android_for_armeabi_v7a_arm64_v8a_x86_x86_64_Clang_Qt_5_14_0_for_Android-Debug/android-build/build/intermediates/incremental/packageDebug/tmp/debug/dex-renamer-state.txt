@@ -1,4 +1,4 @@
-#Sun Mar 08 20:00:25 CET 2020
+#Mon Mar 09 17:34:05 CET 2020
 base.0=C\:\\Git\\Projet C++\\ShowSpace\\App\\build-ShowSpace-Android_for_armeabi_v7a_arm64_v8a_x86_x86_64_Clang_Qt_5_14_0_for_Android-Debug\\android-build\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

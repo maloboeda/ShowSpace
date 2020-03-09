@@ -7,7 +7,11 @@
         <item>armeabi-v7a;c++_shared</item>
         <item>armeabi-v7a;Qt5Core_armeabi-v7a</item>
         <item>armeabi-v7a;Qt5Gui_armeabi-v7a</item>
+        <item>armeabi-v7a;Qt5Network_armeabi-v7a</item>
+        <item>armeabi-v7a;Qt5Multimedia_armeabi-v7a</item>
         <item>armeabi-v7a;Qt5Widgets_armeabi-v7a</item>
+        <item>armeabi-v7a;Qt5OpenGL_armeabi-v7a</item>
+        <item>armeabi-v7a;Qt5MultimediaWidgets_armeabi-v7a</item>
     </array><array name="load_local_libs">
-        <item>armeabi-v7a;libplugins_platforms_qtforandroid_armeabi-v7a.so</item>
+        <item>armeabi-v7a;libplugins_bearer_qandroidbearer_armeabi-v7a.so:libplugins_mediaservice_qtmedia_android_armeabi-v7a.so:libplugins_platforms_qtforandroid_armeabi-v7a.so</item>
     </array></file></source><source path="C:\Git\Projet C++\ShowSpace\App\build-ShowSpace-Android_for_armeabi_v7a_arm64_v8a_x86_x86_64_Clang_Qt_5_14_0_for_Android-Debug\android-build\build\generated\res\rs\debug"/><source path="C:\Git\Projet C++\ShowSpace\App\build-ShowSpace-Android_for_armeabi_v7a_arm64_v8a_x86_x86_64_Clang_Qt_5_14_0_for_Android-Debug\android-build\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Git\Projet C++\ShowSpace\App\build-ShowSpace-Android_for_armeabi_v7a_arm64_v8a_x86_x86_64_Clang_Qt_5_14_0_for_Android-Debug\android-build\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Git\Projet C++\ShowSpace\App\build-ShowSpace-Android_for_armeabi_v7a_arm64_v8a_x86_x86_64_Clang_Qt_5_14_0_for_Android-Debug\android-build\src\debug\res"/></dataSet><mergedItems/></merger>

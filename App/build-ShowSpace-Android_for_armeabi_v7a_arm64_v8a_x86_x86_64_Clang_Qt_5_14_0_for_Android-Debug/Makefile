@@ -446,7 +446,9 @@ armeabi-v7a\main.obj: ..\ShowSpace\main.cpp ..\ShowSpace\mainwindow.h \
 		C:\Qt\5.14.0\android\include\QtCore\qeventloop.h \
 		C:\Qt\5.14.0\android\include\QtWidgets\qdesktopwidget.h \
 		C:\Qt\5.14.0\android\include\QtGui\qguiapplication.h \
-		C:\Qt\5.14.0\android\include\QtGui\qinputmethod.h
+		C:\Qt\5.14.0\android\include\QtGui\qinputmethod.h \
+		C:\Qt\5.14.0\android\include\QtWidgets\QSplashScreen \
+		C:\Qt\5.14.0\android\include\QtWidgets\qsplashscreen.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o armeabi-v7a\main.obj ..\ShowSpace\main.cpp
 
 armeabi-v7a\mainwindow.obj: ..\ShowSpace\mainwindow.cpp ..\ShowSpace\mainwindow.h \
@@ -566,15 +568,6 @@ armeabi-v7a\mainwindow.obj: ..\ShowSpace\mainwindow.cpp ..\ShowSpace\mainwindow.
 		C:\Qt\5.14.0\android\include\QtWidgets\qdesktopwidget.h \
 		C:\Qt\5.14.0\android\include\QtGui\qguiapplication.h \
 		C:\Qt\5.14.0\android\include\QtGui\qinputmethod.h \
-		C:\Qt\5.14.0\android\include\QtWidgets\QGraphicsView \
-		C:\Qt\5.14.0\android\include\QtWidgets\qgraphicsview.h \
-		C:\Qt\5.14.0\android\include\QtGui\qpainter.h \
-		C:\Qt\5.14.0\android\include\QtGui\qtextoption.h \
-		C:\Qt\5.14.0\android\include\QtGui\qpen.h \
-		C:\Qt\5.14.0\android\include\QtWidgets\qscrollarea.h \
-		C:\Qt\5.14.0\android\include\QtWidgets\qabstractscrollarea.h \
-		C:\Qt\5.14.0\android\include\QtWidgets\qframe.h \
-		C:\Qt\5.14.0\android\include\QtWidgets\qgraphicsscene.h \
 		C:\Qt\5.14.0\android\include\QtWidgets\QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o armeabi-v7a\mainwindow.obj ..\ShowSpace\mainwindow.cpp
 

@@ -15,11 +15,15 @@
         <item>armeabi-v7a;c++_shared</item>
         <item>armeabi-v7a;Qt5Core_armeabi-v7a</item>
         <item>armeabi-v7a;Qt5Gui_armeabi-v7a</item>
+        <item>armeabi-v7a;Qt5Network_armeabi-v7a</item>
+        <item>armeabi-v7a;Qt5Multimedia_armeabi-v7a</item>
         <item>armeabi-v7a;Qt5Widgets_armeabi-v7a</item>
+        <item>armeabi-v7a;Qt5OpenGL_armeabi-v7a</item>
+        <item>armeabi-v7a;Qt5MultimediaWidgets_armeabi-v7a</item>
     </array>
 
     <array name="load_local_libs">
-        <item>armeabi-v7a;libplugins_platforms_qtforandroid_armeabi-v7a.so</item>
+        <item>armeabi-v7a;libplugins_bearer_qandroidbearer_armeabi-v7a.so:libplugins_mediaservice_qtmedia_android_armeabi-v7a.so:libplugins_platforms_qtforandroid_armeabi-v7a.so</item>
     </array>
 
 </resources>

@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QWidget>
 
@@ -21,7 +20,7 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QGraphicsView *graphicsView;
+    QWidget *widget;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -30,10 +29,9 @@ public:
         MainWindow->resize(708, 680);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        graphicsView = new QGraphicsView(centralwidget);
-        graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
-        graphicsView->setGeometry(QRect(70, 10, 491, 671));
-        graphicsView->setStyleSheet(QString::fromUtf8("border-image: url(:/new/prefix1/Image/couverture.png);"));
+        widget = new QWidget(centralwidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(80, 210, 120, 80));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
