@@ -13,10 +13,10 @@ EQ            = =
 
 CC            = C:\Android\android-ndk-r21/toolchains/llvm/prebuilt/windows-x86_64/bin/clang
 CXX           = C:\Android\android-ndk-r21/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++
-DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB
 CFLAGS        = -target armv7a-linux-androideabi21 -fno-limit-debug-info -fPIC -fstack-protector-strong -DANDROID -g -marm -O0 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -target armv7a-linux-androideabi21 -fno-limit-debug-info -fPIC -fstack-protector-strong -DANDROID -g -marm -O0 -std=gnu++11 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I..\ShowSpace -I. -IC:\Qt\5.14.0\android\include -IC:\Qt\5.14.0\android\include\QtWidgets -IC:\Qt\5.14.0\android\include\QtGui -IC:\Qt\5.14.0\android\include\QtCore -Iarmeabi-v7a -I. -IC:\Qt\5.14.0\android\mkspecs\android-clang
+INCPATH       = -I..\ShowSpace -I. -IC:\Qt\5.14.0\android\include -IC:\Qt\5.14.0\android\include\QtMultimediaWidgets -IC:\Qt\5.14.0\android\include\QtMultimedia -IC:\Qt\5.14.0\android\include\QtWidgets -IC:\Qt\5.14.0\android\include\QtGui -IC:\Qt\5.14.0\android\include\QtNetwork -IC:\Qt\5.14.0\android\include\QtCore -Iarmeabi-v7a -I. -IC:\Qt\5.14.0\android\mkspecs\android-clang
 QMAKE         = C:\Qt\5.14.0\android\bin\qmake.exe
 DEL_FILE      = del
 CHK_DIR_EXISTS= if not exist
@@ -38,8 +38,8 @@ COMPRESS      =
 DISTNAME      = libShowSpace_armeabi-v7a.so1.0.0
 DISTDIR = C:\Git\Projet\ C++\ShowSpace\App\build-ShowSpace-Android_for_armeabi_v7a_arm64_v8a_x86_x86_64_Clang_Qt_5_14_0_for_Android-Debug\armeabi-v7a\libShowSpace_armeabi-v7a.so1.0.0
 LINK          = C:\Android\android-ndk-r21/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++ -target armv7a-linux-androideabi21 -fno-limit-debug-info
-LFLAGS        = -Wl,-soname,libShowSpace_armeabi-v7a.so -Wl,--build-id=sha1 -Wl,--no-undefined -Wl,-z,noexecstack -shared
-LIBS          = $(SUBLIBS) C:/Qt/5.14.0/android/lib/libQt5Widgets_armeabi-v7a.so C:/Qt/5.14.0/android/lib/libQt5Gui_armeabi-v7a.so C:/Qt/5.14.0/android/lib/libQt5Core_armeabi-v7a.so -lGLESv2   -llog -lz -lm -ldl -lc
+LFLAGS        = -Wl,-soname,libShowSpace_armeabi-v7a.so -Wl,-rpath-link=C:/Qt/5.14.0/android/lib -Wl,--build-id=sha1 -Wl,--no-undefined -Wl,-z,noexecstack -shared
+LIBS          = $(SUBLIBS) C:/Qt/5.14.0/android/lib/libQt5MultimediaWidgets_armeabi-v7a.so C:/Qt/5.14.0/android/lib/libQt5Multimedia_armeabi-v7a.so C:/Qt/5.14.0/android/lib/libQt5Widgets_armeabi-v7a.so C:/Qt/5.14.0/android/lib/libQt5Gui_armeabi-v7a.so C:/Qt/5.14.0/android/lib/libQt5Network_armeabi-v7a.so C:/Qt/5.14.0/android/lib/libQt5Core_armeabi-v7a.so -lGLESv2   -llog -lz -lm -ldl -lc
 AR            = C:\Android\android-ndk-r21/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar cqs
 RANLIB        = C:\Android\android-ndk-r21/toolchains/llvm/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ranlib
 SED           = $(QMAKE) -install sed
@@ -72,10 +72,7 @@ OBJECTS       = armeabi-v7a\Astre.obj \
 		armeabi-v7a\test.obj \
 		armeabi-v7a\qrc_resources.obj \
 		armeabi-v7a\moc_mainwindow.obj
-DIST          = ..\..\Images\ShowSpace_fondnoir.png \
-		..\..\Images\couverture.png \
-		..\..\Images\logo_ShowSpace.png \
-		..\..\Images\splashscreen.mp4 ..\ShowSpace\Astre.h \
+DIST          =  ..\ShowSpace\Astre.h \
 		..\ShowSpace\Etoile.h \
 		..\ShowSpace\Objet_Artificiel.h \
 		..\ShowSpace\Planete.h \
@@ -150,7 +147,6 @@ compiler_rcc_clean:
 	-$(DEL_FILE) armeabi-v7a\qrc_resources.cpp
 armeabi-v7a\qrc_resources.cpp: ..\ShowSpace\resources.qrc \
 		C:\Qt\5.14.0\android\bin\rcc.exe \
-		..\ShowSpace\Image\couverture_redi.png \
 		..\ShowSpace\Image\splashscreen.mp4 \
 		..\ShowSpace\Image\couverture.png \
 		..\ShowSpace\Image\ShowSpace_fondnoir.png \
@@ -276,7 +272,7 @@ armeabi-v7a\moc_mainwindow.cpp: ..\ShowSpace\mainwindow.h \
 		C:\Qt\5.14.0\android\include\QtGui\qicon.h \
 		armeabi-v7a\moc_predefs.h \
 		C:\Qt\5.14.0\android\bin\moc.exe
-	C:\Qt\5.14.0\android\bin\moc.exe $(DEFINES) --include "C:/Git/Projet C++/ShowSpace/App/build-ShowSpace-Android_for_armeabi_v7a_arm64_v8a_x86_x86_64_Clang_Qt_5_14_0_for_Android-Debug/armeabi-v7a/moc_predefs.h" -IC:/Qt/5.14.0/android/mkspecs/android-clang -I"C:/Git/Projet C++/ShowSpace/App/ShowSpace" -IC:/Qt/5.14.0/android/include -IC:/Qt/5.14.0/android/include/QtWidgets -IC:/Qt/5.14.0/android/include/QtGui -IC:/Qt/5.14.0/android/include/QtCore -I. -IC:/Users/clecl/AppData/Roaming/OCamlPro/OCPWin/4.01.0+ocp1-full-mingw64-20160113/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++ -IC:/Users/clecl/AppData/Roaming/OCamlPro/OCPWin/4.01.0+ocp1-full-mingw64-20160113/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++/x86_64-w64-mingw32 -IC:/Users/clecl/AppData/Roaming/OCamlPro/OCPWin/4.01.0+ocp1-full-mingw64-20160113/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++/backward -IC:/Android/android-ndk-r21/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/9.0.8/include -IC:/Users/clecl/AppData/Roaming/OCamlPro/OCPWin/4.01.0+ocp1-full-mingw64-20160113/x86_64-w64-mingw32/include ..\ShowSpace\mainwindow.h -o armeabi-v7a\moc_mainwindow.cpp
+	C:\Qt\5.14.0\android\bin\moc.exe $(DEFINES) --include "C:/Git/Projet C++/ShowSpace/App/build-ShowSpace-Android_for_armeabi_v7a_arm64_v8a_x86_x86_64_Clang_Qt_5_14_0_for_Android-Debug/armeabi-v7a/moc_predefs.h" -IC:/Qt/5.14.0/android/mkspecs/android-clang -I"C:/Git/Projet C++/ShowSpace/App/ShowSpace" -IC:/Qt/5.14.0/android/include -IC:/Qt/5.14.0/android/include/QtMultimediaWidgets -IC:/Qt/5.14.0/android/include/QtMultimedia -IC:/Qt/5.14.0/android/include/QtWidgets -IC:/Qt/5.14.0/android/include/QtGui -IC:/Qt/5.14.0/android/include/QtNetwork -IC:/Qt/5.14.0/android/include/QtCore -I. -IC:/Users/clecl/AppData/Roaming/OCamlPro/OCPWin/4.01.0+ocp1-full-mingw64-20160113/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++ -IC:/Users/clecl/AppData/Roaming/OCamlPro/OCPWin/4.01.0+ocp1-full-mingw64-20160113/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++/x86_64-w64-mingw32 -IC:/Users/clecl/AppData/Roaming/OCamlPro/OCPWin/4.01.0+ocp1-full-mingw64-20160113/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++/backward -IC:/Android/android-ndk-r21/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/9.0.8/include -IC:/Users/clecl/AppData/Roaming/OCamlPro/OCPWin/4.01.0+ocp1-full-mingw64-20160113/x86_64-w64-mingw32/include ..\ShowSpace\mainwindow.h -o armeabi-v7a\moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:

@@ -1,4 +1,5 @@
 QT       += core gui
+QT += multimedia multimediawidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -47,11 +48,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-DISTFILES += \
-    ../../Images/ShowSpace_fondnoir.png \
-    ../../Images/couverture.png \
-    ../../Images/logo_ShowSpace.png \
-    ../../Images/splashscreen.mp4
+DISTFILES +=
 
 RESOURCES += \
     resources.qrc
